@@ -7,10 +7,15 @@ Comprehensive unit tests for the irctc-api Python SDK using standard library uni
 
 import io
 import json
+import os
 import socket
+import sys
 import unittest
 from unittest.mock import patch, MagicMock
 from urllib.error import HTTPError, URLError
+
+# Ensure local src directory is prioritized over any globally installed package
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
 
 from irctc import RailEngine, IrctcApi, __version__
 from irctc.exceptions import (
