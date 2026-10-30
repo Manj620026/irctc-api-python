@@ -33,7 +33,7 @@ class TestRailEngineUnit(unittest.TestCase):
 
     def test_version_and_alias(self):
         """Verify package version and IrctcApi alias."""
-        self.assertEqual(__version__, "1.0.0")
+        self.assertEqual(__version__, "1.0.1")
         self.assertIs(IrctcApi, RailEngine)
 
     def test_initialization_defaults(self):

@@ -22,7 +22,7 @@ from .exceptions import (
     map_http_error,
 )
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 DEFAULT_BASE_URL = "https://api.irctc.dev"
 DEFAULT_TIMEOUT = 30.0
 

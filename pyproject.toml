@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "irctc-api"
-version = "1.0.0"
+version = "1.0.1"
 description = "Official Python client for Indian Railways API (irctc.dev) - PNR, Live Train GPS, Station Boards, and Fare Breakup."
 readme = "README.md"
 requires-python = ">=3.8"
