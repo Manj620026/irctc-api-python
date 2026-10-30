@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "irctc-api"
+version = "1.0.0"
+description = "Official Python client for Indian Railways API (irctc.dev) - PNR, Live Train GPS, Station Boards, and Fare Breakup."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    { name = "IRCTC Developer Network", email = "support@irctc.dev" }
+]
+maintainers = [
+    { name = "IRCTC Developer Network", email = "support@irctc.dev" }
+]
+keywords = [
+    "irctc",
+    "irctc-api",
+    "railway",
+    "indian-railways",
+    "pnr",
+    "pnr-status",
+    "train-status",
+    "live-train-tracking",
+    "train-fare",
+    "train-api",
+    "rail-engine",
+    "ntes",
+    "railway-api"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Typing :: Typed"
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "build>=1.0.0",
+    "twine>=4.0.0"
+]
+
+[project.urls]
+Homepage = "https://irctc.dev"
+Documentation = "https://irctc.dev/docs"
+Repository = "https://github.com/Manj620026/irctc-api-python"
+"Issue Tracker" = "https://github.com/Manj620026/irctc-api-python/issues"
+Changelog = "https://irctc.dev/docs"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.setuptools.package-data]
+irctc = ["py.typed"]
